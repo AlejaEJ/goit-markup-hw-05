@@ -426,6 +426,22 @@ a {
     margin-bottom: 20px;
     width: 370px;
     border: 1px solid var(--bordercards-color); 
+    position: relative;
+
+}
+
+.portfolio-section .cards li div {
+    background-color: rgba(33, 150, 243, 0.9);
+}
+
+.portfolio-section .cards li .frame .overlay {
+    position: absolute;
+    top: 0;
+    color: var(--primary-white-color);
+    background-color: rgba(33, 150, 243, 0.9);
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .portfolio-section .cards li:hover {
