@@ -66,10 +66,14 @@
 
     <!--Main Content Section-->
     <main>
+      <!-- Modal Window -->
+      <section class="backdrop is-hidden" data-backdrop>
+        <form class="modal-form is-hidden" data-modal></form>
+      </section>
       <!--Hero Section-->
       <section class="hero-section">
         <h1 class="hero-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button class="button-primary" type="button">
+        <button class="button-primary" type="button" data-modal-open>
           Solicite nuestro servicio
         </button>
       </section>
@@ -446,5 +450,6 @@
         </aside>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
