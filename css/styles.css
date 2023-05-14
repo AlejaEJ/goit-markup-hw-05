@@ -212,11 +212,34 @@ a {
     transition: transform ease-in  250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(0);
+    
+    position: relative;
     z-index: 1;
 }
 
 .backdrop .modal-form.is-hidden {
     transform: translateY(200px);
+}
+
+.backdrop .modal-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-white-color);
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.backdrop .modal-button .icon-close {
+    width: 11px;
+    height: 11px;
 }
 
 /* Hero Section */
