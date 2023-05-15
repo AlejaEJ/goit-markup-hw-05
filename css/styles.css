@@ -101,7 +101,7 @@ a {
     justify-content: space-between;
     align-items: center;
 
-    height: 100%
+    height: 100%;
 }
 
 .page-header .container nav {
@@ -169,11 +169,24 @@ a {
 
 .page-header .container nav .nav-menu-list .page:hover,
 .page-header .container nav .nav-menu-list .page:focus,
-.page-header .container nav .nav-menu-list .page-current:hover,
-.page-header .container nav .nav-menu-list .page-current:focus,
 .page-header .container .contacts-menu-list li .item:hover,
 .page-header .container .contacts-menu-list li .item:focus {
     color: var(--accent-color);
+}
+
+.page-header .container nav .nav-menu-list .page {
+    position: relative;
+}
+
+.page-header .container nav .nav-menu-list .page:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 44px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
 }
 
 .page-header .container .contacts-menu-list li .item:hover .email-logo,
