@@ -125,8 +125,7 @@ a {
     gap: 80px;
 }
 
-.page-header .container nav .nav-menu-list .page,
-.page-current {
+.page-header .container nav .nav-menu-list .page {
     color: var(--primary-black-color);
     font-weight: 500;
     font-size: 14px;
@@ -178,7 +177,12 @@ a {
     position: relative;
 }
 
-.page-header .container nav .nav-menu-list .page:hover::after {
+.page-header .container nav .nav-menu-list .page.current {
+    color: var(--accent-color);
+}
+
+.page-header .container nav .nav-menu-list .page:hover::after,
+.page-header .container nav .nav-menu-list .page.current::after {
     content: '';
     position: absolute;
     left: 0;
