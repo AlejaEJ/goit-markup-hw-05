@@ -181,7 +181,6 @@ a {
     color: var(--accent-color);
 }
 
-.page-header .container nav .nav-menu-list .page:hover::after,
 .page-header .container nav .nav-menu-list .page.current::after {
     content: '';
     position: absolute;
